@@ -1,0 +1,9 @@
+/* CSS Document */
+#alerta
+{
+    position:absolute;
+	width:96%;
+	left:2%;
+	z-index:2000;
+	top:-100px;
+}

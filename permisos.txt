@@ -1,0 +1,19 @@
+GRANT CONNECT ON DATABASE empresa TO rol_select;
+GRANT CONNECT ON DATABASE empresa TO rol_insert;
+GRANT CONNECT ON DATABASE empresa TO rol_update;
+GRANT CONNECT ON DATABASE empresa TO rol_delete;
+
+GRANT USAGE ON SCHEMA principal TO rol_select;
+GRANT USAGE ON SCHEMA principal TO rol_insert;
+GRANT USAGE ON SCHEMA principal TO rol_update;
+GRANT USAGE ON SCHEMA principal TO rol_delete;
+
+GRANT SELECT ON TABLE principal.acceso TO rol_select;
+GRANT SELECT, INSERT ON TABLE principal.acceso TO rol_insert;
+GRANT SELECT, UPDATE ON TABLE principal.acceso TO rol_update;
+GRANT SELECT, DELETE ON TABLE principal.acceso TO rol_delete;  
+
+GRANT SELECT, USAGE ON TABLE principal.acceso_acce_id_seq TO rol_select;
+GRANT SELECT, USAGE ON TABLE principal.acceso_acce_id_seq TO rol_insert;
+GRANT SELECT, USAGE ON TABLE principal.acceso_acce_id_seq TO rol_update;
+GRANT SELECT, USAGE ON TABLE principal.acceso_acce_id_seq TO rol_delete;
